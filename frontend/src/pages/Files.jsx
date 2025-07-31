@@ -201,7 +201,360 @@ const Files = () => {
   }
 
   return (
-    <div className="min-h-screen p-6">
+    <div className="min-h-screen p-6 relative">
+      {/* Beautiful Background Animations */}
+      <div className="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
+        {/* Enhanced gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-sky-200 to-indigo-300"></div>
+        
+        {/* Floating particles */}
+        <motion.div
+          animate={{
+            y: [0, -20, 0],
+            x: [0, 10, 0],
+            opacity: [0.3, 0.7, 0.3],
+            scale: [1, 1.2, 1]
+          }}
+          transition={{
+            duration: 8,
+            repeat: Infinity,
+            ease: "easeInOut"
+          }}
+          className="absolute top-1/4 left-1/4 w-4 h-4 bg-blue-400/40 rounded-full blur-sm"
+        />
+        <motion.div
+          animate={{
+            y: [0, 30, 0],
+            x: [0, -15, 0],
+            opacity: [0.4, 0.8, 0.4],
+            scale: [1, 1.3, 1]
+          }}
+          transition={{
+            duration: 10,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 2
+          }}
+          className="absolute top-3/4 right-1/3 w-6 h-6 bg-indigo-400/50 rounded-full blur-sm"
+        />
+        <motion.div
+          animate={{
+            y: [0, -25, 0],
+            x: [0, 20, 0],
+            opacity: [0.2, 0.6, 0.2],
+            scale: [1, 1.1, 1]
+          }}
+          transition={{
+            duration: 12,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 4
+          }}
+          className="absolute top-1/2 left-3/4 w-3 h-3 bg-sky-400/30 rounded-full blur-sm"
+        />
+        
+        {/* Enhanced geometric shapes */}
+        <motion.div
+          animate={{
+            rotate: [0, 360],
+            opacity: [0.1, 0.3, 0.1],
+            scale: [1, 1.1, 1]
+          }}
+          transition={{
+            duration: 20,
+            repeat: Infinity,
+            ease: "linear"
+          }}
+          className="absolute top-1/3 right-1/3 w-56 h-56 bg-gradient-to-br from-blue-200/30 to-cyan-200/30 rounded-full blur-sm"
+        />
+        <motion.div
+          animate={{
+            rotate: [360, 0],
+            opacity: [0.1, 0.2, 0.1],
+            scale: [1, 1.05, 1]
+          }}
+          transition={{
+            duration: 25,
+            repeat: Infinity,
+            ease: "linear"
+          }}
+          className="absolute bottom-1/4 left-1/4 w-40 h-40 bg-gradient-to-br from-indigo-200/20 to-purple-200/20 rounded-full blur-sm"
+        />
+        
+        {/* Floating orbs */}
+        <motion.div
+          animate={{
+            y: [0, -30, 0],
+            opacity: [0.2, 0.5, 0.2],
+            scale: [1, 1.2, 1]
+          }}
+          transition={{
+            duration: 6,
+            repeat: Infinity,
+            ease: "easeInOut"
+          }}
+          className="absolute top-1/6 right-1/6 w-8 h-8 bg-blue-300/40 rounded-full blur-md"
+        />
+        <motion.div
+          animate={{
+            y: [0, 25, 0],
+            opacity: [0.3, 0.6, 0.3],
+            scale: [1, 1.15, 1]
+          }}
+          transition={{
+            duration: 7,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 3
+          }}
+          className="absolute bottom-1/3 right-1/2 w-6 h-6 bg-indigo-300/50 rounded-full blur-md"
+        />
+        
+        {/* Enhanced grid pattern */}
+        <div 
+          className="absolute inset-0 opacity-[0.02]"
+          style={{
+            backgroundImage: `radial-gradient(circle at 1px 1px, #3b82f6 1px, transparent 0)`,
+            backgroundSize: '40px 40px'
+          }}
+        />
+        
+        {/* Light rays effect */}
+        <div className="absolute top-0 left-1/4 w-px h-full bg-gradient-to-b from-transparent via-blue-400/20 to-transparent"></div>
+        <div className="absolute top-0 right-1/3 w-px h-full bg-gradient-to-b from-transparent via-indigo-400/15 to-transparent"></div>
+        <div className="absolute top-0 left-2/3 w-px h-full bg-gradient-to-b from-transparent via-sky-400/10 to-transparent"></div>
+        
+        {/* Subtle wave effect */}
+        <motion.div
+          animate={{
+            y: [0, -10, 0],
+            opacity: [0.1, 0.2, 0.1]
+          }}
+          transition={{
+            duration: 8,
+            repeat: Infinity,
+            ease: "easeInOut"
+          }}
+          className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-blue-400/20 via-transparent to-transparent"
+        />
+        
+        {/* Blue energy waves */}
+        <motion.div
+          animate={{
+            x: [-100, 100],
+            opacity: [0, 0.3, 0]
+          }}
+          transition={{
+            duration: 15,
+            repeat: Infinity,
+            ease: "easeInOut"
+          }}
+          className="absolute top-1/4 left-0 right-0 h-px bg-gradient-to-r from-transparent via-blue-400/40 to-transparent"
+        />
+        <motion.div
+          animate={{
+            x: [100, -100],
+            opacity: [0, 0.2, 0]
+          }}
+          transition={{
+            duration: 18,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 5
+          }}
+          className="absolute bottom-1/3 left-0 right-0 h-px bg-gradient-to-r from-transparent via-indigo-400/30 to-transparent"
+        />
+        
+        {/* Blue sparkles */}
+        <motion.div
+          animate={{
+            scale: [0, 1, 0],
+            opacity: [0, 1, 0]
+          }}
+          transition={{
+            duration: 3,
+            repeat: Infinity,
+            ease: "easeInOut"
+          }}
+          className="absolute top-1/3 left-1/2 w-2 h-2 bg-blue-400 rounded-full"
+        />
+        <motion.div
+          animate={{
+            scale: [0, 1, 0],
+            opacity: [0, 1, 0]
+          }}
+          transition={{
+            duration: 4,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 1.5
+          }}
+          className="absolute top-2/3 right-1/4 w-1.5 h-1.5 bg-indigo-400 rounded-full"
+        />
+        <motion.div
+          animate={{
+            scale: [0, 1, 0],
+            opacity: [0, 1, 0]
+          }}
+          transition={{
+            duration: 3.5,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 3
+          }}
+          className="absolute top-1/2 left-1/6 w-1 h-1 bg-sky-400 rounded-full"
+        />
+        
+        {/* Blue glow orbs */}
+        <motion.div
+          animate={{
+            scale: [1, 1.5, 1],
+            opacity: [0.1, 0.3, 0.1]
+          }}
+          transition={{
+            duration: 10,
+            repeat: Infinity,
+            ease: "easeInOut"
+          }}
+          className="absolute top-1/4 left-1/6 w-32 h-32 bg-blue-400/20 rounded-full blur-xl"
+        />
+        <motion.div
+          animate={{
+            scale: [1, 1.3, 1],
+            opacity: [0.1, 0.25, 0.1]
+          }}
+          transition={{
+            duration: 12,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 4
+          }}
+          className="absolute bottom-1/4 right-1/6 w-24 h-24 bg-indigo-400/25 rounded-full blur-xl"
+        />
+        
+        {/* Additional floating bubbles */}
+        <motion.div
+          animate={{
+            y: [0, -40, 0],
+            x: [0, 15, 0],
+            opacity: [0.2, 0.6, 0.2],
+            scale: [1, 1.3, 1]
+          }}
+          transition={{
+            duration: 9,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 1
+          }}
+          className="absolute top-1/3 left-1/6 w-5 h-5 bg-cyan-400/50 rounded-full blur-sm"
+        />
+        <motion.div
+          animate={{
+            y: [0, 35, 0],
+            x: [0, -20, 0],
+            opacity: [0.3, 0.7, 0.3],
+            scale: [1, 1.2, 1]
+          }}
+          transition={{
+            duration: 11,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 3.5
+          }}
+          className="absolute bottom-1/4 left-2/3 w-4 h-4 bg-blue-300/60 rounded-full blur-sm"
+        />
+        <motion.div
+          animate={{
+            y: [0, -30, 0],
+            x: [0, 25, 0],
+            opacity: [0.2, 0.5, 0.2],
+            scale: [1, 1.4, 1]
+          }}
+          transition={{
+            duration: 13,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 2.5
+          }}
+          className="absolute top-2/3 right-1/4 w-6 h-6 bg-indigo-300/40 rounded-full blur-sm"
+        />
+        <motion.div
+          animate={{
+            y: [0, 45, 0],
+            x: [0, -10, 0],
+            opacity: [0.1, 0.4, 0.1],
+            scale: [1, 1.1, 1]
+          }}
+          transition={{
+            duration: 14,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 4.5
+          }}
+          className="absolute top-1/6 left-3/4 w-3 h-3 bg-sky-300/70 rounded-full blur-sm"
+        />
+        <motion.div
+          animate={{
+            y: [0, -25, 0],
+            x: [0, 18, 0],
+            opacity: [0.2, 0.6, 0.2],
+            scale: [1, 1.25, 1]
+          }}
+          transition={{
+            duration: 10.5,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 1.8
+          }}
+          className="absolute bottom-1/3 left-1/3 w-5 h-5 bg-blue-400/30 rounded-full blur-sm"
+        />
+        <motion.div
+          animate={{
+            y: [0, 38, 0],
+            x: [0, -12, 0],
+            opacity: [0.3, 0.8, 0.3],
+            scale: [1, 1.15, 1]
+          }}
+          transition={{
+            duration: 12.5,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 3.2
+          }}
+          className="absolute top-1/2 right-1/6 w-4 h-4 bg-indigo-400/45 rounded-full blur-sm"
+        />
+        <motion.div
+          animate={{
+            y: [0, -35, 0],
+            x: [0, 22, 0],
+            opacity: [0.1, 0.5, 0.1],
+            scale: [1, 1.35, 1]
+          }}
+          transition={{
+            duration: 15.5,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 2.8
+          }}
+          className="absolute bottom-1/6 right-2/3 w-6 h-6 bg-cyan-300/35 rounded-full blur-sm"
+        />
+        <motion.div
+          animate={{
+            y: [0, 42, 0],
+            x: [0, -16, 0],
+            opacity: [0.2, 0.7, 0.2],
+            scale: [1, 1.2, 1]
+          }}
+          transition={{
+            duration: 16.5,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 4.2
+          }}
+          className="absolute top-3/4 left-1/2 w-4 h-4 bg-blue-300/55 rounded-full blur-sm"
+        />
+      </div>
+
       <div className="max-w-7xl mx-auto">
                  {/* Header */}
          <motion.div

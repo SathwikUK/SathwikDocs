@@ -1,6 +1,25 @@
 import { motion } from 'framer-motion'
 import { useNavigate } from 'react-router-dom'
-import { FolderOpen, FileText, Zap, Cloud, Shield, Star, Heart, Sparkles, Target, Palette } from 'lucide-react'
+import { 
+  FolderOpen, 
+  FileText, 
+  Zap, 
+  Cloud, 
+  Shield, 
+  Star, 
+  Heart, 
+  Sparkles, 
+  Target, 
+  Palette,
+  Upload,
+  Download,
+  Search,
+  Edit,
+  Save,
+  Lock,
+  Share,
+  Archive
+} from 'lucide-react'
 
 const Home = () => {
   const navigate = useNavigate()
@@ -412,56 +431,56 @@ const Home = () => {
               {/* Icon 1 - Top */}
               <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                 <div className="w-12 h-12 bg-gradient-to-br from-blue-400 to-cyan-400 rounded-full flex items-center justify-center shadow-lg">
-                  <Zap className="w-6 h-6 text-white" />
+                  <Upload className="w-6 h-6 text-white" />
                 </div>
               </div>
               
               {/* Icon 2 - Right */}
               <div className="absolute top-1/2 right-0 transform translate-x-1/2 -translate-y-1/2">
                 <div className="w-12 h-12 bg-gradient-to-br from-indigo-400 to-purple-400 rounded-full flex items-center justify-center shadow-lg">
-                  <Cloud className="w-6 h-6 text-white" />
+                  <Download className="w-6 h-6 text-white" />
                 </div>
               </div>
               
               {/* Icon 3 - Bottom */}
               <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2">
                 <div className="w-12 h-12 bg-gradient-to-br from-emerald-400 to-teal-400 rounded-full flex items-center justify-center shadow-lg">
-                  <Shield className="w-6 h-6 text-white" />
+                  <Search className="w-6 h-6 text-white" />
                 </div>
               </div>
               
               {/* Icon 4 - Left */}
               <div className="absolute top-1/2 left-0 transform -translate-x-1/2 -translate-y-1/2">
                 <div className="w-12 h-12 bg-gradient-to-br from-amber-400 to-orange-400 rounded-full flex items-center justify-center shadow-lg">
-                  <Star className="w-6 h-6 text-white" />
+                  <Edit className="w-6 h-6 text-white" />
                 </div>
               </div>
               
               {/* Icon 5 - Top Right */}
               <div className="absolute top-10 right-10">
                 <div className="w-10 h-10 bg-gradient-to-br from-pink-400 to-rose-400 rounded-full flex items-center justify-center shadow-lg">
-                  <Heart className="w-5 h-5 text-white" />
+                  <Save className="w-5 h-5 text-white" />
                 </div>
               </div>
               
               {/* Icon 6 - Top Left */}
               <div className="absolute top-10 left-10">
                 <div className="w-10 h-10 bg-gradient-to-br from-violet-400 to-purple-400 rounded-full flex items-center justify-center shadow-lg">
-                  <Sparkles className="w-5 h-5 text-white" />
+                  <Lock className="w-5 h-5 text-white" />
                 </div>
               </div>
 
               {/* Icon 7 - Bottom Right */}
               <div className="absolute bottom-10 right-10">
                 <div className="w-10 h-10 bg-gradient-to-br from-cyan-400 to-blue-400 rounded-full flex items-center justify-center shadow-lg">
-                  <Target className="w-5 h-5 text-white" />
+                  <Share className="w-5 h-5 text-white" />
                 </div>
               </div>
 
               {/* Icon 8 - Bottom Left */}
               <div className="absolute bottom-10 left-10">
                 <div className="w-10 h-10 bg-gradient-to-br from-purple-400 to-pink-400 rounded-full flex items-center justify-center shadow-lg">
-                  <Palette className="w-5 h-5 text-white" />
+                  <Archive className="w-5 h-5 text-white" />
                 </div>
               </div>
             </motion.div>
